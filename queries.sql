@@ -1,3 +1,5 @@
+-- SELECT
+
 -- 1
 SELECT *
 FROM students
@@ -36,3 +38,25 @@ FROM departments;
 SELECT COUNT(*) AS insegnanti_senza_telefono
 FROM teachers
 WHERE phone IS NULL OR phone = '';
+
+
+-- GROUP BY
+
+-- 1
+SELECT YEAR(`enrolment_date`), COUNT(id)
+FROM `students`
+GROUP BY YEAR(enrolment_date)
+-- 2
+-- 3
+-- 4
+
+
+-- JOIN
+
+-- 1
+-- 2
+-- 3
+-- 4
+-- 5
+-- 6
+-- 7
