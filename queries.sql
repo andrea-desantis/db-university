@@ -46,8 +46,15 @@ WHERE phone IS NULL OR phone = '';
 SELECT YEAR(`enrolment_date`), COUNT(id)
 FROM `students`
 GROUP BY YEAR(enrolment_date)
+
 -- 2
+SELECT `office_address`,COUNT(id)
+FROM `teachers`
+GROUP BY `office_address`
+
+
 -- 3
+
 -- 4
 
 
